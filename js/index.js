@@ -7,7 +7,7 @@ const skillsSection = document.getElementById("skills");
 const skillsList = skillsSection.querySelector('ul');
 
 
-copyright.innerHTML = `Diana Brnjic ${thisYear}`;
+copyright.innerHTML = `<i>Diana Brnjic ${thisYear}</i>`;
 
 footer.appendChild(copyright);
 
@@ -37,12 +37,14 @@ messageForm.addEventListener('submit', (e) => {
     `<span>wrote: ${usersMessage}</span>   `;
 
     const editButton = document.createElement('button');
+    editButton.setAttribute("id", "editButton");
     editButton.innerText = 'Edit';
     editButton.type = 'button';
     newMessage.appendChild(editButton);
 
 
     const removeButton = document.createElement('button');
+    removeButton.setAttribute("id", "removeButton");
     removeButton.innerText = 'Remove';
     removeButton.type = 'button';
 
