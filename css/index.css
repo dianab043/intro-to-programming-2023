@@ -1,12 +1,45 @@
 @import url('https://fonts.googleapis.com/css2?family=Hedvig+Letters+Sans&display=swap');
 
+* {
+	box-sizing: border-box; 
+}
 html {
     color: #1F1F1F;
+    scroll-padding-top: 5rem;
 }
 body {
     background-color: #ebe2f37e; 
     font-family: "Hedvig Letters Sans", Helvetica, sans-serif;
-    margin: 0;  
+    margin: 0; 
+    
+}
+header {
+    
+    background-color: #d8c5e7;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: sticky;
+    top: 0;
+}
+.main-header h1 {
+    margin-left: 1rem;
+    max-width: 100vw;
+}
+.main-nav {
+    font-weight: bold;
+    display: flex;
+    flex-direction: row;
+    margin-left: auto;
+    flex-wrap: wrap;
+    
+ 
+}
+.main-nav li {
+    padding: 1rem;
+    display: flex;
+    list-style-type: none;
+    
 }
 img {
     border-radius: 50%;
@@ -17,17 +50,30 @@ img {
     width:25%;
     height:auto;
 }
- #about {
+#about {
     padding: .5rem;
     margin: 1rem;
+    display: flex;
+    flex-direction: column;
 }
 #experience {
     padding: .5rem;
     margin: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+#experience h1 {
+    margin-bottom: .2rem;
+    display: flex;
+    justify-content: center;
 }
 #experience ul {
     list-style-type: none;
     padding-left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 
 }
 #experience li {
@@ -37,24 +83,34 @@ img {
     background-color: #d8c5e768;
     padding: .75rem;
     margin-bottom: 1rem;
+    justify-content: center;
 }
 #skills {
     padding: .5rem;
     margin: 1rem;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 #skills ul {
     padding: 0;
     margin: 0;
     list-style-type: none;
     padding-left: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 #skills li {
     border: 2px solid #492a655e;
     border-radius: 3px;
-    display: inline-block;
     padding: .5rem;
-    margin: 0 .5rem 0 0;   
+    margin: 0 .5rem 1rem 0;
+    display: flex;
+    
+    
 }
 #connect {
     padding: .5rem;
@@ -78,6 +134,8 @@ a:hover {
 #leave_a_message {
     padding: .5rem;
     margin: 1rem;
+    display: flex;
+    flex-direction: column;
 }
 label {
     font-size: 15px; 
@@ -135,3 +193,9 @@ footer p {
     padding: .5rem;
     margin: 1rem 0 1rem 0;
 }
+
+/* @media screen and (max width: 320px) {
+    
+}
+
+@media screen and (max width: 769px) */
